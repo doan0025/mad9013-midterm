@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-family: 'Fondamento', cursive;
+  	font-size: 3.6rem;	
+}
+h2{
+  	font-family: 'Libre Baskerville', serif;
+	font-size: 3.0rem;	
+	font-family: serif;
+}
+h3{
+  	font-family: 'Libre Baskerville', serif;
+	font-size: 2.4rem;
+	font-family: serif;
+	color: #494949;	
+}
+p, li, a{
+  	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;	
+}
+
+.masthead{
+}
+
+@media screen and (max-width: 499px){
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 100%; 
+  }  
+  .main, .two, .three, .footer{
+    float: left;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px){
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 50%; 
+  }   
+  .main{
+    float: left;
+    width: 100%;
+  }
+  .two, .three, .footer{
+    float: left;
+  }
+  .two, .three{
+    width: 50%;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 720px){
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 25%; 
+  }  
+  .main, .two, .three, .footer{
+    float: left;
+  }
+  .main{
+    width: 47%;
+  }
+  .two, .three{
+    width: 26.5%;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1080px){
+  /* -- Navigation Container -- */
+  .navbar{
+    width: 25%;
+    float: left;
+  }
+  /* -- Navigation Items -- */
+  .navbar li{
+    float: none;
+    width: 100%;
+  }
+  .main, .two, .three, .footer{
+    float: left;
+  }
+  .main{
+    width: 35%;
+  }
+  .two, .three{
+    width: 20%;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+	margin: 0;
+}
+
+/***********************************
+					Navigation
+***********************************/
+.navbar{
+  padding:0;
+  margin-top: 0;
+}
+.navbar li{
+	float:left;
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+.main{
+	background-color: #F18D05;
+}
+.two{
+	background-color: #00A1CB;
+}
+.three{
+	background-color: #01A4A4;
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+  margin-top: 0;
+}
